@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>ONG Jacira</title>
+</head>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.createElement('div');
+        menuToggle.className = 'menu-toggle';
+        menuToggle.innerHTML = '<div class="bar"></div><div class="bar"></div><div class="bar"></div>';
+        
+        const nav = document.querySelector('header ul').parentNode;
+        nav.insertBefore(menuToggle, document.querySelector('header ul'));
+        
+        const menu = document.querySelector('header ul');
+        
+        menuToggle.addEventListener('click', function() {
+            menu.classList.toggle('active');
+        });
+    });
+</script>
+
+<body>
+    <div class="conteudo-centralizado">
+        <header>
+            <div id="title">
+                <a href="#title">
+                <h1>ONG</h1>
+                <h1>Jacira</h1>
+                </a>
+            </div>
+    
+            <ul>
+                <a href="#sobre"> <li>Sobre nós</li></a>
+                <a href="#cttJacira"> <li>Fale com Jacira</li></a>
+                <a href="#doe"> <li>Doe agora</li></a>
+                <a href="#beneficiario" id="sejaBeneficiario"> <li>Seja beneficiário</li></a>
+            </ul>
+        </header>
+    
+        <main class="venhaConhecer">
+            <aside>
+                <h2  class="fçparte">Venha conhecer</h2>
+                <h2 class="fml">essa <span>familia!</span></h2>
+    
+            <p>
+                Com um coração generoso e uma dedicação incansável, Dona Jacira transforma cada gota de leite em uma verdadeira fonte de esperança. Seu trabalho vai além da simples doação; ela aquece corações, nutre almas e constrói, com cada ação, um futuro mais solidário e inclusivo para todos.
+            </p>
+    
+            <p>
+                Dona Jacira acredita profundamente que a verdadeira transformação social surge do apoio mútuo, da empatia genuína e da união entre as pessoas. Se você quer fazer parte dessa corrente do bem, seja se cadastrando para receber o benefício ou contribuindo com doações, está no lugar certo. Junte-se a nós e ajude a multiplicar essa história de <span>solidariedade.</span>
+            </p>
+            </aside>
+    
+            <article id="logo-mascarada">
+                  <div class="logo-mascarada">
+                  </div>
+            </article>
+        </main>
+    
+        <main>
+            <div class="carrossel-auto">
+                <div class="slides-auto">
+                  <div class="slide"><img src="./images/bonecarosa.jpg" alt="1"></div>
+                  <div class="slide"><img src="./images/trico.jpg" alt="3"></div>
+                  <div class="slide"><img src="./images/jacira.jpg" alt="2"></div>
+              
+                  <!-- Duplicadas para o loop infinito -->
+                  <div class="slide"><img src="./images/bonecarosa.jpg" alt="1 clone"></div>
+                  <div class="slide"><img src="./images/trico.jpg" alt="3 clone"></div>
+                  <div class="slide"><img src="./images/jacira.jpg" alt="2 clone"></div>
+                </div>
+            </div>    
+        </main>
+    
+        <hr>
+    
+        <main id="beneficiario">
+            <aside>
+                <h2>Quer se cadastrar?</h2>
+                <h2>Então venha, é <span>fácil!</span></h2>
+    
+                <p>
+                    Para receber o benefício de distribuição de leite pela nossa ONG, o processo de cadastro é simples e feito em parceria com o <span id="negrito">CRAS</span> (Centro de                Referência de Assistência Social). Siga os passos abaixo para garantir que você ou sua família sejam elegíveis para o programa:
+                </p>
+    
+                <p>
+                    <span id="negrito">1. Vá até o CRAS mais próximo:</span> Para se cadastrar, é necessário comparecer ao CRAS da sua região e fazer o cadastro social. Eles irão avaliar sua               situação e fornecer um documento que comprova sua elegibilidade.
+                </p>
+    
+                <p>
+                    <span id="negrito">2. Envie seu documento para a Dona Jacira: </span>Após realizar o cadastro no CRAS, envie uma cópia do documento que você recebeu para nossa ONG. Isso pode               ser feito pessoalmente ou através do nosso formulário de pré-cadastro online. Caso você ja possua esse documento o processo de envio é o mesmo.  
+                </p>
+    
+                <p>
+                    <span id="negrito">3. Aguarde a aprovação: </span>A equipe da ONG enviará seus dados ao governo para verificar se você atende aos critérios de renda e idade:
+                    <ul>
+                        ◉ Famílias com renda de até dois salários mínimos.
+                    </ul>
+                    <ul>
+                        ◉ Crianças de até 6 anos.
+                    </ul>
+                    <ul>
+                        ◉ Idosos com 60 anos ou mais, recebendo até um salário mínimo.
+                    </ul>
+                    <ul>
+                        ◉ <span id="negrito"> Importante: </span>Idosos aposentados não são elegíveis para o benefício.
+                    </ul>
+                    
+                </p>
+    
+    
+                <p>
+                    <span id="negrito">4. Acompanhe sua inscrição: </span>Se essa for sua primeira vez, você receberá a confirmação do cadastro por telefone. Lembre-se, é importante levar sua              carteirinha toda vez que for retirar o leite.
+                </p>       
+            </aside>
+        </main>
+    
+    
+        
+        <hr id="hr2">
+    
+        <main id="doe">
+            <aside>
+                <h2>Você gostaria de</h2>
+                <h2>ajudar a nossa<span> ONG?</span></h2>
+    
+                <p>
+                    A nossa ONG depende da generosidade de pessoas como você para continuar levando leite e assistência a tantas famílias e idosos necessitados. Existem diversas formas de contribuir com o nosso trabalho e cada ajuda faz uma enorme diferença.
+                </p>
+    
+                <p id="subtitulo">
+                    Doação de Roupas e Alimentos
+                </p>
+    
+                <p>
+                    Você pode doar roupas, alimentos não perecíveis e outros itens essenciais diretamente na sede da nossa ONG. Sua contribuição vai para as famílias que mais precisam e ajuda a manter a comunidade que atendemos. 
+                </p>
+    
+                <p>
+                    As doações podem ser entregues no endereço:<span id="negrito"> R. Paulo Augusto de Andrade, 355 - Jardim Sao Judas Tadeu de segunda a sexta-feira, das 8h às 17h.  </span> 
+                </p>
+    
+            </aside>
+        </main>
+        
+        <main>
+            <div class="carrossel-auto">
+                <div class="slides-auto">
+                  <div class="slide"><img src="./images/trico.jpg" alt="3"></div>
+                  <div class="slide"><img src="./images/leite.jpg" alt="2"></div>
+                  <div class="slide"><img src="./images/ong.png" alt="3"></div>
+                  <div class="slide"><img src="./images/bonecarosa.jpg" alt="1"></div>
+
+
+              
+                  <!-- Duplicadas para o loop infinito -->
+                  <div class="slide"><img src="./images/trico.jpg" alt="3 clone"></div>
+                  <div class="slide"><img src="./images/leite.jpg" alt="2 clone"></div>
+                  <div class="slide"><img src="./images/ong.png" alt="3"></div>
+                  <div class="slide"><img src="./images/bonecarosa.jpg" alt="1 clone"></div>
+
+
+
+                </div>
+            </div>    
+        </main>
+    
+        <main>
+            <aside>
+                <p id="subtitulo">
+                    Doação em Dinheiro
+                </p>
+        
+                <p>
+                    Para aqueles que desejam fazer uma doação monetária, temos duas opções seguras para sua contribuição:
+                </p>
+                <ul>
+                    <span id="negrito">Via PIX: </span> Para doar pelo PIX, basta usar a nossa chave:
+                    <ul>
+                        <li>
+                            Chave PIX: a4f89b7d-3e29-47ab-9c2d-e123f0a45678
+                        </li>
+                    </ul>
+                </ul>
+    
+                <ul >
+                    <span id="negrito"> Depósito ou Transferência Bancária:</span> Informações da conta bancaria:
+                    <ul class="doacaoBanco">
+                        <p>
+                            Banco: 0000
+                        </p>
+                        <p>
+                            Agência: 0000
+                        </p>
+                        <p>
+                            Conta Corrente: 000000-00
+                        </p>
+                        <p>
+                            Titular: Jacira
+                        </p>
+                    </ul>
+                </ul>
+    
+                <h3>Cada contribuição é um passo a mais para manter viva a missão da Dona Jacira e da nossa ONG. Agradecemos imensamente sua generosidade!</h3>
+            </aside>
+        </main>
+    
+        <hr id="hr2">
+    
+        <main id="cttJacira">
+            <aside>
+                <h2>Fale com a gente,</h2>
+                <h2>entre em <span>contato!</span></h2>
+    
+                <p>
+                    Dona Jacira está sempre disponível para atender e esclarecer dúvidas sobre a ONG, seja para doações, cadastro de beneficiários, ou qualquer outra questão relacionada ao nosso trabalho. Existem duas formas principais de entrar em contato:            </p>
+    
+                <p>
+                    ◉ <span id="negrito">Telefone de Contato: </span> (11) 97254-7074
+                </p>
+    
+                <p>
+                    ◉ <span id="negrito">Horário de Atendimento: </span> Segunda a sexta, das 9h às 17h
+                </p>
+    
+                <p>
+                    Se preferir, você também pode visitar a nossa sede para falar diretamente com Dona Jacira. Ela recebe beneficiários e doadores pessoalmente, sempre com muita atenção e carinho.
+                </p>
+    
+                <p>
+                    ◉ <span id="negrito">Endereço: </span> R. Paulo Augusto de Andrade, 355 - Jardim Sao Judas Tadeu
+                </p>
+    
+                <p>
+                    ◉ <span id="negrito">Horário de Atendimento Presencial: </span> Segunda a sexta, das 8h às 17h
+                </p>     
+            </aside>
+        </main>
+    
+        <hr>
+    
+        <main id="sobre">
+            <article>
+                <div class="logo-mascarada">
+                </div>
+    
+                <div class="historia_p">
+                    <p>
+                        Além de distribuir leite, Dona Jacira cria oportunidades para quem deseja aprender. Em sua ONG, ela ensina crochê para pessoas de todas as idades, criando um espaço de convivência e aprendizado. Essas aulas de crochê não só fortalecem laços entre os participantes, mas também oferecem uma forma de terapia e geração de renda para muitos.
+                    </p>
+    
+                    <p>
+                        Ela também lidera iniciativas para arrecadar doações de roupas, alimentos e recursos financeiros, visitando empresas e distribuindo folhetos para conscientizar a comunidade. Mesmo com a idade avançada, ela não mede esforços para garantir que o projeto continue funcionando e que mais pessoas sejam beneficiadas.
+                    </p>
+    
+                    <div>
+                        <img src="./images/ong.png" id="FtHistorio2" alt="Logo ONG Jacira">
+                    </div>
+        
+                </div>
+            </article>
+    
+            
+            <aside>
+                <div class="teste123">
+                    <h2>Um pouco de história</h2>
+                    <h2>da Ong e de nossa</h2>
+                    <h2>querida <span>Jacira.</span></h2>
+                </div>
+
+    
+                <div class="historia_p">
+                    <p>
+                        Dona Jacira, aos 85 anos, é o coração e a alma da nossa ONG. Com uma trajetória de mais de cinco décadas, ela dedica seu tempo e sua energia para garantir que famílias carentes tenham acesso ao leite que tanto precisam. Sua jornada começou em 1972, quando, ao presenciar injustiças na distribuição de doações, decidiu fazer algo para mudar essa realidade. Dois anos depois, em 1974, ela fundou a ONG que até hoje continua sendo um porto seguro para quem mais precisa.
+                    </p>
+        
+                    <div>
+                        <img src="./images/jacira.jpg" id="FtHistorio1" alt="Logo ONG Jacira">
+                    </div>
+        
+                    <div class="ultimoP">
+                        <p>
+                            Dona Jacira acredita que a verdadeira mudança vem do apoio mútuo e da empatia. Através de sua ONG, ela oferece mais do que leite e aulas: ela oferece esperança, dignidade e uma rede de suporte para aqueles que mais precisam. Se você quer fazer parte dessa corrente do bem, seja se cadastrando para receber o benefício ou contribuindo com doações, está no lugar certo.
+                        </p>
+                        <p>
+                            Aqui, cada gesto conta, cada doação transforma, e cada abraço acolhe. Com amor e dedicação, Dona Jacira inspira uma comunidade inteira a cuidar uns dos outros, com o coração aberto. Sua missão vai além do alimento: ela nutre sonhos, fortalece laços e planta sementes de um futuro mais humano e justo. Venha fazer parte dessa caminhada e descubra como pequenos atos podem gerar grandes mudanças.
+                        </p>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+    
+    <footer>
+        <div class="footer-conteudo">
+            <aside>
+                <p>Endereço: R. Paulo Augusto de Andrade, 355 - Jardim Sao Judas Tadeu</p>
+                <p>Telefone: (11)97254-7074</p>
+            </aside>
+    
+            <article>
+                <p>CNPJ: 18.236.120/0001-58 </p>
+                <p>E-mail: donaJacira443@gmail.com</p>
+            </article>
+    
+            <aside>
+                <div class="logo-mascarada2">
+                  </div>
+            </aside>
+        </div>
+    </footer>
+
+</body>
+</html>

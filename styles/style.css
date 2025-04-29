@@ -1,0 +1,412 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #7d9d87;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudo-centralizado {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+footer {
+  background-color: #415c4a;
+  width: 100%;
+  height: 300px;
+  margin-top: auto;
+}
+
+.footer-conteudo {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 300px;
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+
+}
+
+a:hover{
+    color:  rgb(248, 255, 50);
+    transition: 0.3 all;
+}
+
+#sejaBeneficiario{
+    border: 2px solid rgb(248, 255, 50);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#sejaBeneficiario:hover{
+    background-color: rgb(248, 255, 50);
+    color:#7d9d87;
+}
+
+
+#title{
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li{
+    display: inline-block;
+    margin: 40px;
+}
+
+h1{
+    font-weight: 44400;
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+hr{
+    border: 2px solid  rgb(255, 255, 255);
+    margin-top: 80px;
+}
+
+#hr2{
+    border: 2px solid  rgb(255, 255, 255);
+    margin-top: 50px;
+}
+
+
+h2{
+    font-size: 56px;
+    line-height: 15px;
+    text-align: center;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+}
+
+span{
+    color:  rgb(248, 255, 50);
+    font-weight: 100px;
+}
+
+.fçparte{
+    text-align: left;
+}
+
+.fml{
+    text-align: right; 
+    margin-right: 60px;
+}
+
+.querida{
+    text-align: center; 
+    margin-right: 60px;
+}
+
+.doacaoBanco{
+    margin-left: 40px;
+}
+
+#FtHistorio1{
+    margin-top: 40px;
+    width: 100%;
+    height: 550px;
+    border: 3px solid  rgb(248, 255, 50);
+    border-radius: 40px;
+}
+
+#FtHistorio2{
+    margin-top: 40px;
+    height: 550px;
+    width: 95%;
+    border: 3px solid  rgb(248, 255, 50);
+    border-radius: 40px;
+}
+
+.historia_p p{
+    margin-top: 45px;
+    line-height: 35px;
+}
+
+.ultimoP p{
+    margin-top: 65px;
+    line-height: 35px;
+}
+
+#negrito{
+    font-weight: bold;
+}
+
+#subtitulo{
+    font-weight: bold;
+    font-size: 35px;
+}
+
+p{
+    line-height: 30px;
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+ul{
+    line-height: 30px;
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+
+.logo-mascarada {
+    width: 500px;
+    height: 500px;
+    background-image: url('../images/FTjacira.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+    -webkit-mask-image: url('../images/FTjacira.png');
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+  
+    mask-image: url('../images/FTjacira.png');
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    border: 5px solid rgb(248, 255, 50);
+
+    background-color: rgb(248, 255, 50); /* cor que aparece dentro da imagem */
+  }
+
+
+  
+  .logo-mascarada2 {
+    width: 200px;
+    height: 200px;
+    background-image: url('../images/FTjacira.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+    -webkit-mask-image: url('../images/FTjacira.png');
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+  
+    mask-image: url('../images/FTjacira.png');
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    border: 5px solid rgb(248, 255, 50);
+
+    background-color: rgb(248, 255, 50); /* cor que aparece dentro da imagem */
+  }
+  
+
+.carrossel-auto {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border: 3px solid  rgb(248, 255, 50);
+    border-radius: 40px;
+  }
+  
+  .slides-auto {
+    display: flex;
+    animation: slideLoop 20s linear infinite;
+    width: calc(400%); /* como duplicamos os slides */
+    border: 2px solid  rgb(248, 255, 50);
+
+  }
+  
+  .slide {
+    flex: 0 0 auto;
+  }
+  
+  .slide img {
+    height: 500px;
+    width: auto;
+    display: block;
+  }
+
+  
+  @keyframes slideLoop {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  
+  
+@media screen and (max-width: 998px){
+  
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul.active {
+        display: flex;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+        width: 100%;
+    }
+    
+    /* Ajustes de Layout */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+
+    }
+    
+    h3 ul li{
+        font-size: 1.2rem;
+    }
+
+    p{
+        text-align: center;
+
+    }
+
+    .fçparte{
+        text-align: center;
+        line-height: 10px;
+    }
+
+    .fml{
+        text-align: center;
+        line-height: 10px;
+        margin-left: 40px;
+    }
+
+    .doacaoBanco{
+        text-align: center;
+        margin-right: 80px;
+    }
+    
+    #sejaBeneficiario {
+        padding: 8px;
+    }
+    
+    .venhaConhecer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #sobre{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .teste123{
+        text-align: center;
+    }
+
+    .logo-mascarada {
+        border-width: 3px;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center;    /* Centraliza verticalmente */
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #umPoucoHistoria{
+        
+    }
+
+    aside {
+        width: 100%;
+        text-align: center;
+    }
+
+    img{
+        border-width: 3px;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center;    /* Centraliza verticalmente */
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .carrossel-auto {
+        border-width: 2px;
+    }
+    
+    .slide img {
+        max-height: 200px;
+    }
+
+    .footer-conteudo{
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        align-items: center;
+    }
+
+    footer{ 
+        height: 500px; 
+    }
+    
+    footer .logo-mascarada2{
+        align-items: center;
+        margin-left: 70px;
+    }
+
+
+}
